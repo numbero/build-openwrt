@@ -98,13 +98,13 @@ jobs:
       - name: Update feeds
         run: cd openwrt/ && ./scripts/feeds update -a
 
-      - name: Modify feeds
-        run: |
-          cd openwrt/
-          # 原版的golang不支持arm64编译
-          rm -rf feeds/packages/lang/golang
-          git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
-          ./scripts/feeds install -a
+      #- name: Modify feeds
+       # run: |
+          #cd openwrt/
+          ## 原版的golang不支持arm64编译
+          #rm -rf feeds/packages/lang/golang
+          #git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+          #./scripts/feeds install -a
 
       - name: Install feeds
         run: cd openwrt/ && ./scripts/feeds install -a
