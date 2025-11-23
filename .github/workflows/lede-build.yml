@@ -21,7 +21,7 @@ on:
 
 env:
   FEEDS_CONF: config/lede-master/feeds.conf.default
-  CONFIG_FILE: config/lede-master/config-${{ inputs.target }}
+  CONFIG_FILE: config/lede-master/${{ inputs.target }}/config
   FEEDS_DIY_SH: config/lede-master/feeds-patch.sh
   CONFIG_PATCH_SH: config/lede-master/config-patch.sh
   UPLOAD_BIN_DIR: true
