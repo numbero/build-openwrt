@@ -13,11 +13,11 @@ on:
         description: "Select the target device"
         required: true
         type: choice
-        default: "x86-vmdk"
+        default: "arm64-vmdk"
         options:
-          - x86-vmdk
           - r5s
-
+          - arm64-vmdk
+          - x86-vmdk
 
 env:
   FEEDS_CONF: config/lede-master/feeds.conf.default
@@ -97,14 +97,6 @@ jobs:
 
       - name: Update feeds
         run: cd openwrt/ && ./scripts/feeds update -a
-
-      #- name: Modify feeds
-       # run: |
-          #cd openwrt/
-          ## 原版的golang不支持arm64编译
-          #rm -rf feeds/packages/lang/golang
-          #git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
-          #./scripts/feeds install -a
 
       - name: Install feeds
         run: cd openwrt/ && ./scripts/feeds install -a
