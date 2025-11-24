@@ -3,8 +3,8 @@ Target System ---> Arm System Ready (EFI) Compliant
 Subtarget ---> 64-bit (armv8)
 
 Target Images ---> VMDK
-Target Images ---> (16) Kernel partition size (in MB)                  #默认是 (16) 建议修改 (256)
-Target Images ---> (160) Root filesystem partition size (in MB)        #默认是 (160) 建议修改 (512)
+Target Images ---> (256) Kernel partition size (in MB)                  #默认是 (16) 建议修改 (256)
+Target Images ---> (512) Root filesystem partition size (in MB)        #默认是 (160) 建议修改 (512)
 
 ## 支持ipv6
 Extra packages  --->  ipv6helper
