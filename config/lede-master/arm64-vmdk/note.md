@@ -9,15 +9,11 @@ Target Images ---> (512) Root filesystem partition size (in MB)        #默认�
 ## 支持ipv6
 Extra packages  --->  ipv6helper
 
-## 无线网卡驱动
-Kernel Modules ---> wireless drivers ---> kmod-mt7921-firmware
-
 ## 主题
 luci-theme-argon
 
 ## 应用
 luci-app-argon-config
-luci-app-ddnsgo
 luci-app-dockerman
 luci-app-openclash
 luci-app-openvpn-server
