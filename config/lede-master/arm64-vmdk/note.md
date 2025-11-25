@@ -32,4 +32,4 @@ luci-app-store
 ## 如果是arm编译机 需要将以下配置替换
 CONFIG_GOLANG_EXTERNAL_BOOTSTRAP_ROOT=""
 ### 更换为
-CONFIG_GOLANG_EXTERNAL_BOOTSTRAP_ROOT="/opt/homebrew/Cellar/go/1.25.4/libexec"
+CONFIG_GOLANG_EXTERNAL_BOOTSTRAP_ROOT="/usr/lib/go-1.22"
